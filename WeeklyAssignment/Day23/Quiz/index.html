@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Interactive Quiz</h1>
+
+  <p id="question">Question 1: What is the capital of India?</p>
+
+  <form id="quizForm">
+    <!-- Options container for question 1 -->
+    <div class="options-container">
+      <label>
+        <input type="radio" name="q1" value="delhi"> Delhi
+      </label>
+      <label>
+        <input type="radio" name="q1" value="mumbai"> Mumbai
+      </label>
+      <label>
+        <input type="radio" name="q1" value="kolkata"> Kolkata
+      </label>
+      <label>
+        <input type="radio" name="q1" value="chennai"> Chennai
+      </label>
+    </div>
+
+    <button type="button" onclick="checkAnswer('q'+currentQuestion)">Submit Answer</button>
+  </form>
+
+  <p id="score">Score: 0</p>
+
+  <script src="index.js"></script>
+</body>
+</html>
